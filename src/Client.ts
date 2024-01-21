@@ -59,7 +59,7 @@ export default class Client {
      * Gets the list of maps
      */
     public static async maps(): Promise<Array<IMapObject>> {
-        const result = await axios.get("samirtalovic.pythonanywhere.com/maps/");
+        const result = await axios.get("https://samirtalovic.pythonanywhere.com//maps/");
         return result.data;
     }
 
@@ -67,7 +67,7 @@ export default class Client {
      * Calculates the next move for the AI
      */
     public static async calculateMove(currentGameState: ICalculateMoveDTO): Promise<IGameState> {
-        const result = await axios.post("samirtalovic.pythonanywhere.com/calculatemove/", currentGameState, {
+        const result = await axios.post("https://samirtalovic.pythonanywhere.com//calculatemove/", currentGameState, {
             cancelToken: Client.axiosCancelToken.token,
         });
 
