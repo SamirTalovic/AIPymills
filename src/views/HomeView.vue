@@ -90,11 +90,15 @@
         <div class="player-item">
           <img src="../assets/human.jpeg" alt="Human" class="player-icon">
           <p>Human Player</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0"> {{ gameState.unplacedPieces.white }}</p>
           <p v-if="message" class="mill-message">{{ message }}</p>
         </div>
         <div class="player-item">
           <img src="../assets/hard.jpeg" alt="AI" class="player-icon">
           <p>AI Player</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0"> {{ gameState.unplacedPieces.black }}</p>
           <p v-if="message2" class="mill-message">{{ message2 }}</p>
         </div>
       </div>
@@ -104,11 +108,15 @@
         <div class="player-item">
           <img src="../assets/hard.jpeg" alt="Computer 1" class="player-icon">
           <p>Computer 1</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0"> {{ gameState.unplacedPieces.white }}</p>
           <p v-if="message" class="mill-message">{{ message }}</p>
         </div>
         <div class="player-item">
           <img src="../assets/hard.jpeg" alt="Computer 2" class="player-icon">
           <p>Computer 2</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0"> {{ gameState.unplacedPieces.black }}</p>
           <p v-if="message2" class="mill-message">{{ message2 }}</p>
         </div>
       </div>
@@ -116,11 +124,15 @@
         <div class="player-item">
           <img src="../assets/human.jpeg" alt="Computer 1" class="player-icon">
           <p>Player 1</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.white !== 0"> {{ gameState.unplacedPieces.white }}</p>
           <p v-if="message" class="mill-message">{{ message }}</p>
         </div>
         <div class="player-item">
           <img src="../assets/human.jpeg" alt="Computer 2" class="player-icon">
           <p>Player 2</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0" > Unplaced pieces:</p>
+          <p v-if=" gameState.unplacedPieces.black !== 0"> {{ gameState.unplacedPieces.black }}</p>
           <p v-if="message2" class="mill-message">{{ message2 }}</p>
         </div>
       </div>
